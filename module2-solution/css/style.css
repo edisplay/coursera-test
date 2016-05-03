@@ -1,0 +1,100 @@
+/********** Base styles **********/
+* { 
+	margin: 0; 
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Comic Sans MS", cursive, sans-serif; /*Arial, Helvetica, sans-serif;*/
+	color: #222;
+}
+
+
+/********** General Styles **********/
+#container {
+	margin: 0 auto;
+	padding: 1%;
+}
+
+h1 {
+	text-align: center;
+	margin: 15px 15px 25px;
+}
+
+section {  /* All Sections */
+	border: 1px solid black;
+	float: left;
+	margin: 1%;
+	position: relative;
+}
+
+#section1 {
+	background-color: LightCoral; /*IndianRed;*/
+}
+#section2 {
+	background-color: pink;
+}
+#section3 {
+	background-color: DarkSeaGreen;
+}
+
+p {
+	padding: 2% 3%;
+}
+
+div#container section > div {  /* All Section Titles */
+	width: 100px;
+	border: 1px solid black;
+	padding: 1%;
+	float: right;
+	text-align: center;
+	font-weight: 600;
+}
+
+#lorem1, #lorem2, #lorem3 { clear: right; }
+
+#title{
+	background-color: Lavender; /*CornflowerBlue;*/
+}
+#title2{
+	background-color: LemonChiffon;
+}
+#title3{
+	background-color: orange;
+}
+
+
+/********** Simple Responsive Framework - Media Queries **********/
+/********** Large devices only - desktop version **********/
+@media (min-width: 992px) {
+	section {
+		width: 30%;
+		margin-right: 2%;
+	}
+	#section1{
+		margin-left: 2%;
+	}
+
+}
+
+/********** Medium devices only - Tablet view **********/
+@media (min-width: 768px) and (max-width: 991px) {
+	#section1, #section2 {
+		width: 48%;
+	}
+
+	#title3{
+		padding: .5%;
+	}
+
+	#lorem3 {
+		padding: 1%;
+	}
+
+}
+
+/********** Medium devices only - Mobile view **********/
+@media (max-width: 767px) {
+	#title3 {
+		padding: .5%;
+	}
+
+}
